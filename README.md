@@ -1,0 +1,1 @@
+"# PhotoStudio-Jquery-Widgets-Effects-" 

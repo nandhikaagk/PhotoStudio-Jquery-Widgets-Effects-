@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>About Us</title>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+  <script type="text/javascript" src="https://code.jquery.com/ui/1.11.2/jquery-ui.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="http://code.jquery.com/ui/1.11.2/themes/ui-darkness/jquery-ui.css">
+  
+
+    <script>
+        $(document).ready(function() {
+          //ajax
+    $(document).ajaxStart(function(){
+        alert("Sucessfull Started");
+    })
+  $("#b1").click(function(){
+    $.get("info.php", function(data, status){
+      alert("Status: " + status);
+       $("#head").html(data);
+    });
+  });
+  $("#b2").click(function(){
+    $("#load1").load("info1.php")
+  });
+             $(".img1").click(function() {
+             $( ".img1" ).effect( "bounce", {
+                times: 5,
+                distance: 300
+              }, 2000, function() {
+});
+});
+$('.h11').click(function() {
+$( ".h11" ).effect({
+effect: "fade",
+});
+});
+$('.h22').click(function() {
+$( ".h22" ).effect({
+effect: "fold",
+duration: 4000
+});
+});
+$('.h33').click(function() {
+$( ".h33" ).effect({
+effect: "highlight",
+duration: 3000
+});
+});
+$('.h44').click(function() {
+$( ".h44" ).effect({
+effect: "slide",
+duration: 1500
+});
+});
+$('.h55').click(function() {
+$( ".h55" ).effect({
+effect: "pulsate",
+duration: 6000
+});
+});
+$('.h66').click(function() {
+$( ".h66" ).effect({
+effect: "explode",
+easing: "easeInExpo",
+pieces: 20,
+duration: 1800
+});
+});
+$('.h77').click(function() {
+$( ".h77" ).effect( "shake", {
+times: 5,
+distance: 300
+}, 2000, function() {
+$( this ).css( "background", "gray" );
+});
+});
+$('.h78').click(function() {  
+               $( ".h78" ).effect({  
+                  effect: "blind",  
+                 duration:0  
+              });  
+            });  
+
+$('.h79').click(function() {
+$( ".h79" ).effect({
+effect: "clip",
+duration: 1800
+});
+});
+$(function() {  
+            $( ".h98" ).resizable();  
+         }); 
+         $( function() {
+    $( ".hh8" ).dialog({
+      autoOpen: false,
+      show: {
+        effect: "blind",
+        duration: 1000
+      },
+      hide: {
+        effect: "explode",
+        duration: 1000
+      }
+    });
+ 
+    $( ".hh7" ).on( "click", function() {
+      $( ".hh8" ).dialog( "open" );
+    });
+  } );
+  $(function() {  
+            $( ".menu1" ).menu();  
+         }); 
+         
+});
+$( function() {
+    $( ".tabs" ).tabs();
+  } );
+        </script>
+    <style>
+    .nav-link{color: black;font-weight: 700;}
+    .navbar{height:4.5pc;}
+    .brand1{
+        position:absolute;left:12pc;
+        top:25px;font-weight: 800;
+        color:rgb(220, 27, 24);
+    }
+    .brand
+    {
+        position:relative;
+        top:7px;left:5pc;
+        font-weight: 800;
+    }
+    .footer-dark {
+  padding:50px 0;
+  color:#f0f9ff;
+  background-color:#282d32;
+}
+.footer-dark h3 {
+  margin-top:0;
+  margin-bottom:12px;
+  font-weight:bold;
+  font-size:16px;
+  
+}
+.footer-dark ul {
+  padding:0;
+  list-style:none;
+  line-height:1.6;
+  font-size:14px;
+  margin-bottom:0;
+}
+.footer-dark ul a {
+  color:inherit;
+  text-decoration:none;
+  opacity:0.6;
+}
+.footer-dark ul a:hover {
+  opacity:0.8;
+  color:rgb(29, 136, 136);
+}
+@media (max-width:767px) {
+  .footer-dark .item:not(.social) {
+    text-align:center;
+    padding-bottom:20px;
+  }
+}
+.footer-dark .item.text {
+  margin-bottom:36px;
+}
+@media (max-width:767px) {
+  .footer-dark .item.text {
+    margin-bottom:0;
+  }
+}
+.footer-dark .item.text p {
+  opacity:0.6;
+  margin-bottom:0;
+}
+.footer-dark .item.social {
+  text-align:center;
+}
+@media (max-width:991px) {
+  .footer-dark .item.social {
+    text-align:center;
+    margin-top:20px;
+  }
+}
+.footer-dark .item.social > a {
+  font-size:20px;
+  width:36px;
+  height:36px;
+  line-height:36px;
+  display:inline-block;
+  text-align:center;
+  border-radius:50%;
+  box-shadow:0 0 0 1px rgba(255,255,255,0.4);
+  margin:0 8px;
+  color:#fff;
+  opacity:0.75;
+}
+.footer-dark .item.social > a:hover {
+  opacity:0.9;
+}
+.footer-dark .copyright {
+  text-align:center;
+  padding-top:24px;
+  opacity:0.3;
+  font-size:13px;
+  margin-bottom:0;
+}
+.img1
+{
+    height: 600px;
+     width: 38%;
+}
+.h11
+{
+    position:absolute;top:9pc;left:36pc;
+}
+.h22
+{
+    width:500px; height:450;border:10px;position: absolute;top:53pc;left:8pc;
+}
+.h33
+{
+    position:absolute;top:62pc;left:45pc;background-color: rgb(236, 178, 189);
+}
+.h44{
+    font-size: medium;
+}
+
+.h66
+{
+  position:absolute;top:11pc;left:36pc;color:rgb(236, 29, 29);
+}
+.menu1
+{
+  width: 200px;  
+
+}
+
+
+    </style>
+</head>
+<body>
+  <div id="head">
+    <div id="load1">
+
+    <nav class="navbar navbar-expand-lg bg-light navbar-light fixed-top tabs">
+        <div class="container-fluid">
+        <h4 class="brand">Kiwi</h4>
+         <h4 class="brand1 hh7">PhotoStudio</h4>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img class=" hh8"src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlZWTPy2KfqKNkrlDWt59K6Nu8a2CWNpN7MA&usqp=CAU" >
+         <ul class="nav justify-content-end">
+            <li class="nav-item">
+              <a class="nav-link" href="home.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html" style="color: rgb(245, 49, 42);">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="service.html">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="tool.html">Contact Us</a>
+            </li>
+            
+            <form class="d-flex">
+                <input class="form-control me-2" type="text" placeholder="Search">
+            </form>
+          </ul>
+        </div>
+    </nav>
+    <div class="container m-5 p-5">
+        <img class="img1"src="https://c0.wallpaperflare.com/preview/916/224/937/man-working-camera-photography.jpg" >
+        <h5 class="h11">Why Choose Us</h5>
+        <h2 class="h66" >About Our Studio</h2>
+        <i style="font-size:30px;position:absolute;top:17pc;left:36pc;color:rgb(239, 26, 26);" class="glyphicon glyphicon-equalizer">&#xf0f3;</i>
+        <h6 style="font-size:17px;position:absolute;top:17.3pc;left:39pc;">EXPERIENCE</h6><br>
+        <p style="font-size:15px;position:absolute;top:21pc;left:36pc;"> We carry more than 18 years of experience<br> in photography and cinematography.
+            We have <br>planned and executed stories of more than 300+<br> clients in the industry.</p>
+        <i style="font-size:30px;position:absolute;top:32pc;left:36pc;color:rgb(248, 27, 27);" class="glyphicon glyphicon-camera">&#xf1ad;</i>
+        <h6 style="font-size:17px;position:absolute;top:32pc;left:39pc;">10% FREE OFFERS</h6><br>
+        <p style="font-size:15px;position:absolute;top:36pc;left:36pc;"> We ensure customers satisfaction by providing<br> the most desirable services.We have a super <br>creative young team of photographers those<br> who create magic with their skills.
+        </p>
+        <i style="font-size:35px;position:absolute;top:17pc;left:61pc;color:rgb(248, 27, 27);" class="glyphicon glyphicon-camera">&#xe046;</i>
+        <h6 style="font-size:17px;position:absolute;top:17.3pc;left:65pc;">CAMERA FEATURES</h6><br>
+        <p style="font-size:15px;position:absolute;top:21pc;left:61pc;"> To capture your products and precious moments,<br> we use HD cameras and the latest equipment.<br> Our photography services are tailor-made <br>
+            for your diverse requirements.
+
+
+        </p>
+        <i style="font-size:35px;position:absolute;top:32pc;left:61pc;color:rgb(239, 23, 23);" class="glyphicon glyphicon-camera">&#xf0f0;</i>
+        <h6 style="font-size:17px;position:absolute;top:32pc;left:65pc;">BEST YOUNG PHOTOGRAPHERS</h6><br>
+        <p style="font-size:15px;position:absolute;top:36pc;left:61pc;">
+            We have a creative young team of photographers<br> who create magic with their skills.we<br> blend them with our creativity and unique ideas and<br> bring the best to you.
+        </p>
+    </div>
+    <div>
+    <img class="h22" src="https://static.wixstatic.com/media/588de0_bcd483ffe0c74f7fb69a2ce012071890~mv2.jpg/v1/fill/w_640,h_506,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/588de0_bcd483ffe0c74f7fb69a2ce012071890~mv2.jpg"  >
+    <br><br>
+    <h6 style="position:absolute;top:60pc;left:45pc;color:rgb(240, 38, 38);">ABOUT US</h6>
+    <h3 class="h33">Best Professional Photographers</h3>
+    <p style="position:absolute;top:66pc;left:45pc;">With an excellent and trained team of professional photographers in India, we provide high-resolution photography and cinematography in India as well as abroad. We cover events and wedding ceremonies to showcase the true essence of your memories so that you cherish them forever. By capturing the candid moments with traditions, we blend them with our creativity and unique ideas and bring the best to you.
+
+    </p><br><br></div>
+  <br><br><br><br><br><br><br><br>
+    <section class="w3l-blogpost-content w3l-courses py-5">
+      <div class="container py-md-5">
+        <div class="header-title mb-md-5 mb-4">
+          <center><span class="sub-title" style="color:rgb(238, 50, 40);"><b>Our Team</b></span><br>
+          <button id="b2"><h5 class="hny-title text-left "> Specialization</h5></center></button>
+        </div>
+        <div class="row">
+          <div class="col-lg-4 col-md-6 item">
+            <div class="card">
+              <div class="card-header p-0 position-relative">
+                  <img class="card-img-bottom d-block radius-image-full h44" src="https://img.freepik.com/free-photo/man-isolated-showing-emotions-end-gestures_1303-30095.jpg" alt="Card image cap">
+              </div>
+              <div class="card-body blog-details">
+                <button id="b1"><h6>Vijay Kumar</h6></button>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 mt-md-0 mt-4">
+            <div class="card">
+              <div class="card-header p-0 position-relative">
+                  <img class="card-img-bottom d-block radius-image-full h55" src="https://www.bwillcreative.com/wp-content/uploads/2020/11/black-and-white-candid-photo-1024x683.png">
+              </div>
+              <div class="card-body blog-details">
+                  <h6>Sushmitha</h6>
+                </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 mt-md-0 mt-4 h79">
+            <div class="card">
+              <div class="card-header p-0 position-relative">
+                  <img class="card-img-bottom d-block radius-image-full " src="https://t4.ftcdn.net/jpg/02/14/74/61/360_F_214746128_31JkeaP6rU0NzzzdFC4khGkmqc8noe6h.jpg">
+              </div>
+              <div class="card-body blog-details">
+                  <h6>Gowtham</h6>
+                  
+                </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 mt-5 h98">
+            <div class="card">
+              <div class="card-header p-0 position-relative ">
+                  <img class="card-img-bottom d-block radius-image-full " src="https://cdn.pixabay.com/photo/2014/08/26/20/08/photographer-428388_960_720.jpg">
+              </div>
+              <div class="card-body blog-details">
+                  <h6>Aravind Kumar</h6>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 mt-5  h78">
+            <div class="card">
+              <div class="card-header p-0 position-relative ">
+                  <img class="card-img-bottom d-block radius-image-full" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuCEuY75LzUijstBHIyMx-6oeJa4zeI2H6TA&usqp=CAU">
+              </div>
+              <div class="card-body blog-details">
+                  <h6>Yuthika</h6>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 mt-5">
+            <div class="card">
+              <div class="card-header p-0 position-relative h77">
+                  <img class="card-img-bottom d-block radius-image-full " src="https://thumbs.dreamstime.com/b/photographer-26480560.jpg">
+              </div>
+              <div class="card-body blog-details">
+                  <h6>Krishnan</h6>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="footer-dark">
+      <footer>
+          <div class="container">
+              <div class="row">
+                  <div class="col-sm-6 col-md-3 item">
+                      <h3 >Specialized Photographers</h>
+                      <ul class="menu1">
+                          <li>Wedding Photos</li>
+                          <li>Pre-Wedding Photos</a></li>
+                          <li>NewBorn Photos</li>
+                          <li>Maternity Photos</li>
+                          <li>Candid Photos</li>
+                      </ul>
+                  </div>
+                  <div class="col-sm-6 col-md-3 item">
+                      <h3> Available Services</h3>
+                      <ul>
+                          <li><a href="home.html">Home</a></li>
+                          <li><a href="about.html">About Us</a></li>
+                          <li><a href="medicine.html">Services</a></li>
+                          <li><a href="tool.html">Contact Us</a></li>
+                      </ul>
+                  </div>
+                  <div class="col-md-6 item text">
+                      <h3>Kiwi Photography</h3>
+                      <p> kiwi Photos offers professional digital photography services for events, like pre-wedding photoshoot, product photography. Since the inception of the company in 2002, we have been providing high-quality photography services by capturing special moments throughout the rituals. We understand the personalized requirements of each client and put our best to deliver that.</p>
+                  </div>
+                  <div class="col item social">
+                    <a href="#"><i style="font-size:24px" class="fa">&#xf09a;</i>
+                    </a><a href="#"><i style="font-size:24px" class="fa">&#xf09b;</i></a>
+                    <a href="#"><i style="font-size:24px" class="fa">&#xf16d;</i></a>
+                    <a href="#"><i style="font-size:24px" class="fa">&#xf0e1;</i></a></div>
+              </div>
+              <p class="copyright">kiwiphotography@2023</p>
+          </div>
+      </footer>
+  </div></div></div>
+  </body>
+</html>
